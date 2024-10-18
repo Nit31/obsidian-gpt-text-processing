@@ -1,8 +1,0 @@
-- logging
-- compute number of tokens
-- loading screen
-- summarization
-- hashing on api key
-- readme
-- install script
-- fix all fixme & todo
