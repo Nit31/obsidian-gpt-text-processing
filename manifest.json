@@ -1,0 +1,11 @@
+{
+	"id": "gpt-processing",
+	"name": "GPT processing",
+	"version": "1.0.0",
+	"minAppVersion": "0.16.0",
+	"description": "Text summarization using OpenAI GPT",
+	"author": "Obsidian",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": false
+}
