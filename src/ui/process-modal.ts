@@ -37,7 +37,7 @@ export class ProcessModal extends Modal {
 		// Create checkbox for summarizing text
 		new Setting(contentEl)
 			.setName("Summarize")
-			.setDesc("Create a summary of the text")
+			.setDesc("Create a summary of the text. Note that the text should be divided into topics first")
 			.addToggle(toggle => toggle
 				.setValue(this.plugin.settings.summarize ?? false) // Set initial value from settings
 				.onChange(async (value) => {
