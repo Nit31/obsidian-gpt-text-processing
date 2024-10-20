@@ -7,7 +7,15 @@ import { topicProcessingLog, summarizationLog } from "#/helpers/logger";
 
 // Function to divide text by topics
 export async function divide_by_topics(plugin: TextProcessingPlugin) {
-	const chunk_limit = 500;
+	const chunk_limit = 10000;
+
+	// Check if api key is set
+	if (!plugin.settings.api_key) {
+		new Notice('OpenAI API key not found. Please enter your OpenAI API key in the settings page.');
+		return;
+	}
+
+	// Get the active markdown view
 	const view = this.app.workspace.getActiveViewOfType(MarkdownView);
 
 	// Check if there is an active markdown view
@@ -56,7 +64,15 @@ export async function divide_by_topics(plugin: TextProcessingPlugin) {
 
 // Function to summarize text
 export async function summarize(plugin: TextProcessingPlugin) {
-	const chunk_limit = 500;
+	const chunk_limit = 10000;
+
+	// Check if api key is set
+	if (!plugin.settings.api_key) {
+		new Notice('OpenAI API key not found. Please enter your OpenAI API key in the settings page.');
+		return;
+	}
+
+	// Get the active markdown view
 	const view = this.app.workspace.getActiveViewOfType(MarkdownView);
 
 	// Check if there is an active markdown view

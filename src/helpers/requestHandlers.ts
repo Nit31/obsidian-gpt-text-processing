@@ -4,7 +4,7 @@ import { Notice } from "obsidian";
 
 // Prompt for dividing text into general topics
 const topics_prompt =
-	`I have the text, and I would like you to divide it into very general topics. 
+`I have a text, and I would like you to divide this text into high-level, abstract topics that summarize multiple sections or paragraphs. Focus on the key ideas and general themes rather than specific details or individual points made in each paragraph. The topics should provide a bird's-eye view of the text's content.
 For each section of the text, identify the main topic and present the text under corresponding headings. 
 Use the following format: 
 ## Topic 
