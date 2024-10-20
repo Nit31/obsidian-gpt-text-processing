@@ -9,11 +9,14 @@ The plugin leverages the OpenAI GPT API to both separate text by topic and summa
 
 **1. Download the last release from the [GitHub releases](https://github.com/Nit31/obsidian-gpt-text-processing/releases)**
 
-**2. Unpack the archive to the plugin directory inside your vault**
+You should download only `main.js` & `package.json` files.
 
-The directory should look like this:
+**2. Put the downloaded files to the plugin directory inside your vault**
+
+File structure should look like this:
 ```
-/path-to-vault/.obsidian/plugins/obsidian-gpt-text-processing
+/path-to-vault/.obsidian/plugins/obsidian-gpt-text-processing/main.js
+/path-to-vault/.obsidian/plugins/obsidian-gpt-text-processing/package.json
 ```
 
 **3. Enable the plugin**
