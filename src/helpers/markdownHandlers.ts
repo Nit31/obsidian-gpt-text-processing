@@ -7,7 +7,7 @@ import { topicProcessingLog, summarizationLog } from "#/helpers/logger";
 
 // Function to divide text by topics
 export async function divide_by_topics(plugin: TextProcessingPlugin) {
-	const chunk_limit = 10000;
+	const chunk_limit = 1000;
 
 	// Check if api key is set
 	if (!plugin.settings.api_key) {
@@ -64,7 +64,7 @@ export async function divide_by_topics(plugin: TextProcessingPlugin) {
 
 // Function to summarize text
 export async function summarize(plugin: TextProcessingPlugin) {
-	const chunk_limit = 10000;
+	const chunk_limit = 2000;
 
 	// Check if api key is set
 	if (!plugin.settings.api_key) {

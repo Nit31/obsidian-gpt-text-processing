@@ -7,7 +7,7 @@ const homeDir = process.env.HOME || process.env.USERPROFILE || '';
 // Get the path to the log directory
 const folderPath = resolve(homeDir, '.obsidian/logs/');
 // Set limit for log file size
-const MAX_LOG_FILE_SIZE = 1024 * 1024; // 1 MB
+const MAX_LOG_FILE_SIZE = 5 * 1024 * 1024; // 5 MB
 
 // Create the directory if it does not exist
 async function ensureFolderExists(folderPath: string): Promise<void> {

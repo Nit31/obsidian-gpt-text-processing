@@ -45,9 +45,6 @@ export default class TextProcessingPlugin extends Plugin {
 
 		// Add a settings tab to allow user configuration of the plugin
 		this.addSettingTab(new TextProcessingSettingTab(this.app, this));
-
-		// Set up an interval task to run every 5 minutes
-		this.registerInterval(window.setInterval(() => console.log('setInterval'), 5 * 60 * 1000));
 	}
 
 	// Load plugin settings from storage
