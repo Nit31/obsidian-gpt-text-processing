@@ -2,6 +2,8 @@ name: Release plugin
 
 on:
     push:
+        branches:
+            - main
         tags:
             - "*"
     pull_request:
@@ -10,6 +12,7 @@ on:
 
 jobs:
     build:
+        permissions: write-all
         runs-on: ubuntu-latest
 
         steps:
